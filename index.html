@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Project Solution</title>
+  </head>
+  <body>
+    <main id="app">
+      <section class="game-shell" aria-label="Shape drop game">
+        <div class="stats" aria-live="polite">
+          <div><span>Shapes</span><strong id="shape-count">0</strong></div>
+          <div>
+            <span>Surface area</span><strong id="shape-area">0 px²</strong>
+          </div>
+        </div>
+        <div id="pixi-container"></div>
+        <div class="controls">
+          <div class="control">
+            <div>
+              <span>Spawn rate</span><strong id="spawn-rate">1.0 / sec</strong>
+            </div>
+            <button
+              id="rate-down"
+              type="button"
+              aria-label="Decrease spawn rate"
+            >
+              -
+            </button>
+            <button id="rate-up" type="button" aria-label="Increase spawn rate">
+              +
+            </button>
+          </div>
+          <div class="control">
+            <div>
+              <span>Gravity</span><strong id="gravity-value">180 px/s²</strong>
+            </div>
+            <button
+              id="gravity-down"
+              type="button"
+              aria-label="Decrease gravity"
+            >
+              -
+            </button>
+            <button id="gravity-up" type="button" aria-label="Increase gravity">
+              +
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

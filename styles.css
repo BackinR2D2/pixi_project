@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f6f6f6;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+.game-container {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+
+#game {
+  width: 60%;
+  height: 60%;
+  border: 1px solid #562c2c;
+  border-radius: 4px;
+}
